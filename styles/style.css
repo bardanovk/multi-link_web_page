@@ -1,6 +1,7 @@
 @font-face{
-	font-family: 'Niagara';
-	scr: url('../fonts/NIASOL.ttf') format('truetype');
+	font-family: 'Niagara';	
+	scr: 	local('Niagara Solid'),
+			url('./fonts/NIASOL.ttf');
 }
 
 	body{	

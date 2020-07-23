@@ -1,0 +1,73 @@
+@font-face{
+	font-family: 'Niagara Solid';
+	scr: url(fonts/NIASOL.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+	body{	
+		font-family: "Niagara Solid";
+		display:flex;
+		width: 76%;
+		margin: 0 auto;
+		font-size: 10vh;
+	}
+	html{
+		background: url(../images/background1.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 80vh;
+	}
+
+	.parts{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-basis: 50%;
+		height: 100vh;
+	}
+
+	h1{	
+		font-size: 5em;
+		margin-block-start: 0px;
+	    margin-block-end: 0;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+		background-image: linear-gradient(currentColor, currentColor);
+	    background-position: 0% 100%;
+	    background-repeat: no-repeat;
+	    background-size: 0% .2vh;
+	    transition: background-size .3s;
+	    
+	}
+
+	a:hover {	
+	    background-size: 100% .5vh;
+	}
+
+	ul{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 60vh;
+		list-style-type: none; 
+	}
+
+
+@media screen and (min-width: 450px) {
+	body{
+		flex-direction: column;
+		align-items: center;
+	}
+	h1{
+		font-size: 17.5vh;
+		margin-top: 2.5vh;
+	}
+	ul{
+		height: 55vh;
+	}
+}

@@ -3,6 +3,7 @@
 <head>
 	<title>BK inc.</title>
 	<meta charset="utf-8" content="text">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<style type="text/css">
 		@font-face {
 		    font-family: 'Niagara';
@@ -16,6 +17,21 @@
 		    font-display: swap;
 			}
 
+		@media screen and (max-width: 720px)
+		{
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		@media screen and (min-width: 720px)
+		{
+			body{
+				display: flex;				
+			}
+		}
+			
+		}
 		body{
 			overflow: hidden;
 	    	opacity:0; 
@@ -23,8 +39,7 @@
 			animation: show .5s 1; 
 			animation-fill-mode: forwards; 
 			animation-delay: 1.5s;			
-			font-family: "Niagara";
-			display:flex;
+			font-family: "Niagara";			
 			width: 76%;
 			margin: 0 auto;
 			font-size: 10vh;

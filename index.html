@@ -17,21 +17,7 @@
 		    font-display: swap;
 			}
 
-		@media screen and (max-width: 720px)
-		{
-			body{
-				display: flex;
-				flex-direction: column;
-			}
-		}
-		@media screen and (min-width: 720px)
-		{
-			body{
-				display: flex;				
-			}
-		}
-			
-		}
+		
 		body{
 			overflow: hidden;
 	    	opacity:0; 
@@ -87,6 +73,19 @@
 			align-items: flex-end;
 			height: 60vh;
 			list-style-type: none; 
+		}
+		@media screen and (max-width: 720px)
+		{
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		@media screen and (min-width: 720px)
+		{
+			body{
+				display: flex;				
+			}
 		}
 		@keyframes show{
 					0% {opacity:0;}
